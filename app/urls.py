@@ -17,13 +17,14 @@ from core.views import (
     UserViewSet,
     AcessorioViewSet,
     CorViewSet,
+    ModeloViewSet,
 )
 
 router = DefaultRouter()
 router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'acessorios', UserViewSet, basename='acessorios')
 router.register(r'cores', UserViewSet, basename='cores')
-
+router.register(r'modelos', UserViewSet, basename='modelos')
 
 
 urlpatterns = [
