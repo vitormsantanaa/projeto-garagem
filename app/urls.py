@@ -18,6 +18,7 @@ from core.views import (
     AcessorioViewSet,
     CorViewSet,
     ModeloViewSet,
+    VeiculoViewSet,
 )
 
 router = DefaultRouter()
@@ -25,6 +26,7 @@ router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'acessorios', UserViewSet, basename='acessorios')
 router.register(r'cores', UserViewSet, basename='cores')
 router.register(r'modelos', UserViewSet, basename='modelos')
+router.register(r'veiculos', UserViewSet, basename='veiculos')
 
 
 urlpatterns = [
