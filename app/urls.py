@@ -16,11 +16,13 @@ from core.views import (
     UserRegistrationView,
     UserViewSet,
     AcessorioViewSet,
+    CorViewSet,
 )
 
 router = DefaultRouter()
 router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'acessorios', UserViewSet, basename='acessorios')
+router.register(r'cores', UserViewSet, basename='cores')
 
 
 
